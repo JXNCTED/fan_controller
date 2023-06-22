@@ -19,6 +19,7 @@ jobs:
       - name: Install dependencies
         run: |
           python -m pip install --upgrade pip
+          pip install wxpython
           wget https://github.com/openscopeproject/InteractiveHtmlBom/releases/download/v2.6.0/InteractiveHtmlBom.zip
           unzip InteractiveHtmlBom.zip
       - name: Generating Interactive BOM
